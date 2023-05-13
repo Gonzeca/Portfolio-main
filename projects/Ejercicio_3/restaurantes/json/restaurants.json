@@ -1,0 +1,137 @@
+{
+    "restaurants" : [ {
+        "name" : "Grand Mahakam",
+        "location" : "Madrid, España",
+        "img" : "../img/restaurante1.jpg",
+        "rate" : "4.8",
+        "price" : 3,
+        "schedule" : "8:00 - 23:00",
+        "distance" : "1.5km",
+        "delivery" : true,
+        "principalMsg" : "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi ab eaque fugit temporibus accusantium aliquam iusto saepe quisquam molestias. Soluta laborum obcaecati labore autem deleniti sint vitae voluptates ea ipsum?",
+        "menu" : {
+            "plate1" : {
+                "name" : "Estofado fino",
+                "ingredients" : "Estofado de carne, zanahoria, tomate y zapallo",
+                "price" : 1500,
+                "img" : "../img/plato1.jpg",
+                "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex neque, quasi doloremque maxime recusandae quidem. Consequuntur, ipsa nesciunt error optio tempora fugit ipsum sequi rem nihil atque velit fugiat magni!"
+            },
+            "plate2" : {
+                "name" : "Asado de mar",
+                "ingredients" : "Camarones, almejas, rabas y salmón",
+                "price" : 5500,
+                "img" : "../img/plato2.jpg",
+                "description" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro illum beatae voluptates iure quos quam, provident ducimus reprehenderit quia consectetur recusandae dolore dolor odio quasi nihil laudantium temporibus? Soluta, voluptatum!"
+            },
+            "plate3" : {
+                "name" : "Chow-Fan",
+                "ingredients" : "Arroz con camarones",
+                "price" : 2500,
+                "img" : "../img/plato3.jpg",
+                "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolor aspernatur tempore non maiores facilis libero excepturi enim, autem eligendi voluptatem doloribus, suscipit distinctio ex aperiam repudiandae sint. Aperiam, minus."
+            },
+            "plate4" : {
+                "name" : "La Milagrosa 😎",
+                "ingredients" : "Milanesa de carne con papas fritas",
+                "price" : 1000,
+                "img" : "../img/plato4.jpg",
+                "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum, quisquam tempore praesentium ipsa laudantium nostrum ex modi recusandae consequuntur obcaecati, sunt, reiciendis odio saepe illum. Porro aperiam quisquam quam."
+            }
+        },
+        "opinions" : {
+            "person1" : {
+                "user" : "bocaMIVIDA",
+                "picture" : "../img/perfil1.png",
+                "comment" : "ecelente servicio y mui rica la comida",
+                "rate" : 4
+            },
+            "person2" : {
+                "user" : "racingdios",
+                "picture" : "../img/perfil2.png",
+                "comment" : "Mis felicitaciones al chef por el gran plato que nos sirvió a nuestra familia.",
+                "rate" : 4
+            },
+            "person3" : {
+                "user" : "Magdalena Pertusso",
+                "picture" : "../img/perfil3.png",
+                "comment" : "Increíble mezcla de sabores 😊",
+                "rate" : 5
+            },
+            "person4" : {
+                "user" : "XxDarknessxX",
+                "picture" : "../img/perfil4.png",
+                "comment" : "Horrible.",
+                "rate" : 1
+            }
+        }
+    },
+    {
+        "name" : "L'fondieu",
+        "location" : "New York, EEUU",
+        "img" : "../img/restaurante3.jpg",
+        "rate" : "5",
+        "price" : 4,
+        "schedule" : "8:00 - 23:00",
+        "distance" : "750km",
+        "delivery" : false,
+        "principalMsg" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eveniet ad dolor ullam sequi, accusantium, perferendis corporis libero enim, voluptatem aliquam exercitationem consequuntur laboriosam hic fugiat perspiciatis voluptas! Laboriosam, hic?",
+        "menu" : {
+            "plate1" : {
+                "name" : "Salchichas ensalsadas",
+                "ingredients" : "Salchichas acecinadas y con salsa primavera",
+                "price" : 3500,
+                "img" : "../img/plato5.jpg",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi corrupti nobis modi officia fuga neque aliquam aperiam, eos natus expedita fugit vero velit possimus pariatur quos voluptate ipsa et sequi."
+            },
+            "plate2" : {
+                "name" : "Chow-Fan",
+                "ingredients" : "Arroz con camarones",
+                "price" : 4500,
+                "img" : "../img/plato6.jpg",
+                "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem dolore reprehenderit, iusto assumenda minima quos eos tempora adipisci, molestias non amet debitis ab commodi quas magnam nihil deleniti recusandae."
+            },
+            "plate3" : {
+                "name" : "Albóndigas",
+                "ingredients" : "Albóndigas con zanahorias y lentejas",
+                "price" : 3000,
+                "img" : "../img/plato7.jpg",
+                "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus doloremque molestiae consectetur maxime dolorum quos nemo illum odio ipsa sit aliquam dolor ullam, non libero corrupti error ratione est saepe."
+            },
+            "plate4" : {
+                "name" : "Spaghetti",
+                "ingredients" : "Fideos con salsa de tomate",
+                "price" : 2500,
+                "img" : "../img/plato8.jpg",
+                "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis earum itaque ex perferendis similique aspernatur cum dolor expedita dicta, deserunt unde vero distinctio iste sint quos vel sed modi blanditiis."
+            },
+            "plate5" : {
+                "name" : "Tortellini",
+                "ingredients" : "Tortellini relleno de carne cortada a cuchillo",
+                "price" : 4000,
+                "img" : "../img/plato9.jpg",
+                "description" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore doloremque, dolore dignissimos officiis temporibus culpa totam cupiditate animi quasi, quod necessitatibus? Suscipit eos eum dolorum similique ab, quo nulla officiis."
+            }
+        },
+        "opinions" : {
+            "person1" : {
+                "user" : "omarK",
+                "picture" : "../img/perfil5.png",
+                "comment" : "Disgustado con la comida y los precios",
+                "rate" : 2
+            },
+            "person2" : {
+                "user" : "Davoo",
+                "picture" : "../img/perfil6.png",
+                "comment" : "Perdió Boca y del enojo armé quilombo en todo el restaurant y no se dignaron a por lo menos devolverme la plata de la comida, no puede ser boludo",
+                "rate" : 0
+            },
+            "person3" : {
+                "user" : "Lionel Andrés Messi Cuccittini",
+                "picture" : "../img/perfil7.png",
+                "comment" : "Los tortellini tenían sabor a copa del mundo, además acompañado de un buen fulbo champagne",
+                "rate" : 5
+            }
+        }
+    }]
+}

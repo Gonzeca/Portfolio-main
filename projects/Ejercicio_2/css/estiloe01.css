@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Gulzar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+/*-----TIPOGRAFIAS Y ESTILOS-----*/
+
+.arvo {
+    font-family: 'Arvo', serif;
+}
+
+.gulzar {
+    font-family: 'Gulzar', serif;
+}
+
+.fs15 {
+    font-size: 15px;
+}
+
+.fw100 {
+    font-weight: 100;
+}
+
+.fw700 {
+    font-weight: 700;
+}
+
+.lh20 {
+    line-height: 20px;
+}
+
+/*-----------COLORES------------*/
+
+.fondo {
+    background-color: #060614;
+}
+
+.azulos {
+    background-color: #323286;
+}
+
+.violeta {
+    background-color: #ac6bd6;
+}
+
+.blancot {
+    color: white;
+}
+
+.rojo {
+    background-color: red;
+}
+
+.verde {
+    background-color: green;
+}
+
+.naranja {
+    background-color: orange;
+}
+
+#contenedor {
+    width: 100%;
+    height: 100vh;
+    padding: 10%;
+}
+
+#imagen {
+    background-image: url(../img/imagenvioleta.jpg);
+    background-size: cover;
+    /*background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;*/
+}
+
+/*-------MEDIDAS--------*/
+/*anchos*/
+
+.w50 {
+    width: 50%;
+}
+
+/*alturas*/
+
+.h30 {
+    height: 30px;
+}
+
+.h60 {
+    height: 60px;
+}
+
+.h600 {
+    height: 600px;
+}
+
+/*--------ORGANIZACION----------*/
+
+/*.fl {
+    float: left;
+}
+
+.clearb {
+    clear: both;
+}*/
+
+.pd20 {
+    padding: 20px;
+}
+
+.dflex {
+    display: flex;
+}
+
+.columna {
+    flex-direction: column;
+}
+
+.alinear {
+    justify-content: space-evenly;
+}
+
+.center {
+    text-align: center;
+}
+
+/*--------MEDIA QUERIES--------*/
+/*PARA QUE SEA RESPONSIVE*/
+/*seccion para establecer BREAKPOINTS*/
+
+/*@media screen and (max-width:800px) {
+    .violeta {
+        background-color: yellow;
+        transform: scale(0.5);
+    }
+}*/
+
+@media screen and (max-width:667px) {
+    .flexdir {
+        flex-direction: column-reverse;
+    }
+    .w50 {
+        width: 100%;
+    }
+    .alinear {
+        flex-direction: column;
+        align-items: center;
+    }
+}

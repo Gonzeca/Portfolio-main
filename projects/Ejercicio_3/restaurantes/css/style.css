@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=IBM+Plex+Sans&family=Poppins&family=Tomorrow&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+/*CONTENEDOR SCROLLBAR*/
+::-webkit-scrollbar {
+    height: 0;
+    width: 10px;
+    border-radius: 5px;
+}
+
+/* FONDO BARRA SCROLL*/
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+
+}
+
+/* SELECTOR */
+::-webkit-scrollbar-thumb {
+    background: rgb(34, 190, 138);
+    border-radius: 5px;
+}
+
+/* SELECTOR hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(34, 190, 138);
+}
+
+/*TIPOGRAFÍAS*/
+
+.ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.tomorrow {
+    font-family: 'Tomorrow', sans-serif;
+}
+
+.basic {
+    font-family: 'Basic', sans-serif;
+}
+
+.ibm {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Tamaños*/
+
+.fs50 {
+    font-size: 50px;
+}
+
+.fs40 {
+    font-size: 40px;
+}
+
+.fs30 {
+    font-size: 30px!important;
+}
+
+.fs20 {
+    font-size: 20px;
+}
+
+.fs10 {
+    font-size: 10px;
+}
+
+
+
+/*Colores*/
+
+.blanco {
+    color: white;
+}
+
+.grey{
+    color: rgb(95, 95, 95);
+}
+
+.black {
+    color: black;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: rgb(34, 190, 138);
+}
+
+.yellow {
+    color: rgb(255, 208, 0);
+}
+
+/*Nose*/
+.detalles, .menu, .opiniones {
+    position: absolute;
+    width: 100%;
+    right: -100vw;
+}
+
+.display {
+    transition: 0.3s;
+    right: 0;
+    top: 0;
+}
+
+.menu .active {
+    visibility: visible;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+.background-food .active {
+    transform: scale(1);
+}
+
+.background-food {
+    transition: 0.5s;
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.food {
+    transform: scale(0);
+    transition: 0.5s;
+    position: absolute;
+    width: 60vw;
+    height: 90vh;
+    top: 5vh;
+    right: 20vw;
+    z-index: 2;
+    background-color: white!important;
+}
+
+.header {
+    position: relative;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    padding: 10%;
+    box-shadow: inset 0 0 150px 20px;
+    margin-bottom: 40px;
+}
+
+.header .welcome {
+    position: absolute;
+    height: 100px;
+    bottom: 20px;
+}
+
+.header .busqueda {
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    bottom: -20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.200);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.busqueda .icono {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(34, 190, 138);
+    text-align: center;
+    line-height: 50px;
+}
+
+.busqueda input[type="search"] {
+    background-color: transparent;
+    height: 50px;
+    width: calc(100% - 100px);
+    border: none;
+    padding-left: 10px;
+
+}
+.busqueda input[type="search"]:focus {
+    background-color: rgba(128, 128, 128, 0.226);
+    outline: none;
+}
+
+.busqueda input[type="submit"]{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    color:grey;
+}
+
+.busqueda input[type="submit"]:hover {
+    transform:  scale(1.2);
+    color: black;
+
+}
+
+.busqueda input[type="submit"]:active {
+    background-color: rgb(34, 190, 138);
+    transform: scale(1);
+}
+
+nav {
+    top: 20px;
+}
+
+nav ul {
+    height: 100px;
+    font-size: 20pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    overflow-x: scroll;
+}
+
+nav ul li {
+    flex: 0 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color:transparent;
+    list-style: none;
+  
+    
+}
+/*--------COMPONENTES RESTORANTES-----*/
+
+.ofresto {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.lista .plato {
+   border-radius: 14px;
+   cursor: pointer;
+    /* overflow: hidden; */
+    flex: 1 0 180px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.312);
+}
+
+.plato .imagen {
+    height: 100%;
+    width: auto;
+    border-radius: 14px 0 0 14px;
+}
+
+.imagen img{
+    object-fit: cover;
+    height: 100%;
+    width: 110%;
+}
+
+.plato .descrip {
+    height: 100%;
+    width: 150%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.datosresto{
+    display: flex;
+    flex-direction: column;
+}
+
+.descrip .datos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.rangoprecio {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    position: absolute;
+    bottom: -30px;
+    right: -50px;
+    color: rgb(34, 190, 138);
+}
+
+.rate {
+    position: absolute;
+    background-color:  rgb(34, 190, 138);
+    height: 50px;
+    width: 50px;
+    border-radius: 15px 0 15px 0px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 16pt;
+}
+
+.rate_food{
+    position: absolute;
+    right: 50px;
+    bottom: -80px;
+    transform: scale(1.5);
+    height: 40px;
+    width: 70px;
+    line-height: 40px;
+}
+
+.nota {
+    width: 80%;
+    margin: 30px 10%;
+    padding: 20px;
+    border-width: 0 0 1px 0;
+    border-color: rgb(194, 194, 194);
+}
+
+.compra {
+    display: flex;
+    justify-content: center;
+}
+
+.count {
+    width: 35px;
+    height: 60px;
+    border: none;
+    background-color: rgb(34, 190, 138);
+}
+
+.counter {
+    width: 50px;
+    height: 60px;
+    border: none;
+    text-align: center;
+    background-color: rgb(34, 190, 138);
+}
+
+.add-to {
+    background-color: rgb(34, 190, 138);
+    border: none;
+    width: 300px;
+    margin-left: 5px;
+}
+
+.count:hover, .counter:hover, .add-to:hover {
+    transition: 0.3s;
+    background-color: rgb(12, 139, 97);
+}
+
+.rate__card{
+    position: relative;
+    right: -150px;
+    bottom: 35px;
+    width: 70px;
+}
+
+.rate__resto{
+    right: 5%;
+    bottom: -25px;
+}
+
+.arrow-back {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.sm{
+    font-size: 14pt;
+}
+
+h2 {
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: rgba(85, 85, 85, 0.959);
+}
+
+.datosresto h3 {
+    font-weight: lighter;
+}
+
+h5 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.tipo-plato {
+    border-bottom: solid 2px rgb(34, 190, 138);
+    text-align: center;
+    font-weight: normal;
+}
+
+.lista-platos {
+    background-color: rgb(240, 240, 240);
+    height: calc(100vh - 157px);
+    padding: 30px 30px 0 30px;
+    gap: 10px;
+    overflow-y: scroll;
+}
+
+.platos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.plato {
+    display: flex;
+    margin: 15px;
+    cursor: pointer;
+    width: 40%;
+}
+
+.plato img {
+    width: 200px;
+    height: 150px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.lista-opiniones {
+    background-color: rgb(240, 240, 240);
+    height: calc(100vh - 157px);
+    padding: 20px;
+    gap: 10px;
+    overflow-y: scroll;
+}
+
+.opinion {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 100px;
+    background-color: rgb(230, 230, 230);
+    border: solid 1px black;
+    margin: 10px;
+}
+
+.imagen-perfil img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.opinion .descrip {
+    width: 100%;
+}
+
+.texto-opinion {
+    width: 100%;
+}
+
+.estrellas {
+    position: relative;
+    right: 20px;
+    top: -20px;
+    width: 200px;
+}
+
+.nav_mobile{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+
+.nav_mobile button {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+}
+
+.nav_mobile button:active{
+    text-decoration: none;
+    height: 60px;
+    line-height: 60px;
+    color: grey;
+}
+
+.nav_mobile .active, .nav_mobile button:hover{
+    border-top: solid 4px rgb(34, 190, 138);
+    color: black!important;
+    height: 56px!important;
+}

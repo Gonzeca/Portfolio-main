@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css"> -->
+
+    <title>Restaurante</title>
+</head>
+
+<body>
+    <div id="detalles" class="detalles display">
+        <section id="header" class="header">
+
+            <div id="rateResto" class="rate ubuntu rate__resto">
+                <div id="rangoPrecio" class="rangoprecio">
+                </div>
+            </div>
+        </section>
+    
+        <section class="ofresto">
+            <h2 name="restaurantName" class="poppins"></h2>
+            <h5 id="restaurantLocation" class="fs20 ibm grey"></h5>
+
+        </section>
+        <br><br>
+        <nav>
+            <ul id="ulDescription" class="grey poppins">
+                <li>
+                    <i class="material-icons-outlined fs30 green">
+                        schedule
+                    </i>
+                    <h6 id="restaurantSchedule"></h6>
+                </li>
+                <li>
+                    <i class="material-icons-outlined fs30 red">
+                        place
+                    </i>
+                    <h6 id="restaurantDistance"></h6>
+                </li>
+            </ul>
+        </nav>
+        
+        <p id="restaurantMsg" class="ofresto ubuntu grey"></p>
+    </div>
+    <div id="menu" class="menu">
+
+        <div id="backgroundFood" class="background-food">
+            <div id="food" class="food">
+                <section id="headerFood" class="header">
+                    <span id="arrowBack" class="material-icons-outlined arrow-back blanco">
+                        arrow_back
+                    </span>
+                    <div id="priceFood" class="rate rate_food ubuntu"></div>
+                </section>
+            
+                <section class="ofresto">
+                    <h2 id="foodName" class="poppins"></h2>
+                </section>
+                <p id="foodDescription" class="ofresto ubuntu grey"></p>
+                <input class="nota fs15 tomorrow" type="text" placeholder="Enviar una nota (Quitar cebolla, agregar salsa, etc.)">
+                <div class="compra">
+                    <button id="minus" class="count fs40 blanco poppins">-</button><input id="counter" class="counter fs30 blanco" type="text" value="1" disabled><button id="plus" class="count fs40 blanco poppins">+</button><button class="add-to fs30 blanco poppins">AGREGAR AL CARRO</button>
+                </div>
+            </div>
+        </div>
+
+        <h2 name="restaurantName" class="poppins"></h2>
+        <div class="lista-platos">
+            <h4 class="tipo-plato fs20 ibm">Platos Principales</h4>
+            <div id="platos" class="platos"></div>
+        </div>
+    </div>
+    <div id="opiniones" class="opiniones">
+        <h2 class="poppins">Opiniones</h2>
+        <div id="listaOpiniones" class="lista-opiniones"></div>
+    </div>
+    <footer class="nav_mobile basic">
+        <button id="detallesButton">DETALLES</button>
+        <button id="menuButton">MENU</button>
+        <button id="opinionesButton">OPINIONES</button>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
